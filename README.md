@@ -18,7 +18,7 @@ This package contains the models already defined by the application:
 ### Screens
 
 This package contains classes that are used by the application to display information from the models on the screen.
-Each screen returns a Command instance (= the action to be carried on).
+Each screen returns a Command instance (= the action to be carried out).
 
 ### Commands
 
@@ -28,6 +28,6 @@ When executed, a command returns a context.
 
 ### Main application
 
-The main application is controlled by `manage_clubs.py`. Based on the current Context instance, it instantiates the screens and run them. The command returned by the screen is then executed to obtain the next context.
+The main application is controlled by `manage_clubs.py`. Based on the current Context instance, it instantiates the screens and runs them. The command returned by the screen is then executed to obtain the next context.
 
 The main application is an infinite loop and stops when a context has the attribute `run` set to False.
